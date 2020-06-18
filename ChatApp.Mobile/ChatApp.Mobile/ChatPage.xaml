@@ -7,7 +7,7 @@
              x:Class="ChatApp.Mobile.ChatPage">
     <ContentPage.Content>
         <StackLayout>
-            <Entry x:Name="entMessage" Placeholder="Enter Message"/>
+            <Entry x:Name="txtMessage" Placeholder="Enter Message"/>
             <Button x:Name="btnSend" Text="Send Message"/>
             <ListView x:Name="lvMessages">
                 <ListView.ItemTemplate>
