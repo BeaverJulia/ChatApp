@@ -1,0 +1,38 @@
+﻿@model string
+@{
+    ViewData["Title"] = "Chat";
+}
+<input hidden value="@Model" id="userName"/>
+<div class="row">
+    <div class="col-md-10">
+        <input class="form-control" id="txtMessage" placeholder="Enter message"/>
+    </div>
+    <div class="col-md-2">
+        <button id="btnSend"class="btn btn-success" disabled="">Send</button>
+    </div>
+    <hr class="col-md-12 py-3"/>
+    <div class="col-md-12">
+        <ul id="listMessages">
+
+        </ul>
+    </div>
+</div>
+@section Scripts{
+    <script src="~/lib/aspnet-signalr/signalr.min.js" asp-append-version="true" ></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+}
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+      
+</div>
+</body>
+</html>
